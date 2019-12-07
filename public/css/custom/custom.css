@@ -1,0 +1,225 @@
+/*================================================================================
+	Item Name: Materialize - Material Design Admin Template
+	Version: 5.0
+	Author: PIXINVENT
+	Author URL: https://themeforest.net/user/pixinvent/portfolio
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN CSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+/*----------------------------------------
+        Data Tables
+------------------------------------------*/
+.section-data-tables table
+{
+    width: 100%;
+}
+
+.section-data-tables table .dataTable
+{
+    margin: 0px;
+    margin-right: 16px;
+}
+
+.section-data-tables .dataTable.no-footer {
+    border-bottom: 1px solid #7C3BDA;
+}
+
+.section-data-tables .dataTables_wrapper table.dataTable thead th
+{
+    min-width: 69px;
+
+    color: #616161;
+}
+
+.section-data-tables .dataTables_wrapper table.dataTable thead tr 
+{
+    border-bottom: none;
+}
+
+.section-data-tables .dataTables_wrapper table.dataTable thead th.background-image-none
+{
+    background-image: none !important;
+}
+.section-data-tables .dataTables_wrapper table.dataTable thead th.select-all
+{
+    background-image: none !important;
+}
+
+.section-data-tables .dataTables_wrapper table.dataTable th,
+.section-data-tables .dataTables_wrapper table.dataTable td
+{
+    font-weight: 300;
+
+    padding: 17px 14px;
+
+    white-space: nowrap; 
+
+    border-bottom: 1px solid #7C3BDA;
+}
+
+.section-data-tables .dataTables_wrapper table.dataTable tbody
+{
+    overflow: auto; 
+
+    max-width: 100%;
+    height: 300px;
+}
+.section-data-tables .dataTables_wrapper table.dataTable tbody th,
+.section-data-tables .dataTables_wrapper table.dataTable tbody td
+{
+    padding: 8px 14px;
+
+    white-space: nowrap; 
+
+    border: none !important;
+}
+.section-data-tables .dataTables_wrapper table.dataTable tbody tr td:before,
+.section-data-tables .dataTables_wrapper table.dataTable tbody tr th:before
+{
+    font-size: .9rem;
+    line-height: 14px; 
+
+    top: 10px;
+    left: -3px;
+
+    width: 12px;
+    height: 12px;
+
+    text-indent: 0;
+}
+
+.section-data-tables .dataTables_wrapper table.dataTable tfoot th,
+.section-data-tables .dataTables_wrapper table.dataTable tfoot td
+{
+    font-weight: 300;
+
+    white-space: nowrap; 
+
+    border-top: none;
+}
+
+.section-data-tables .dataTables_wrapper table.dataTable.stripe tbody tr,
+.section-data-tables .dataTables_wrapper table.dataTable.display tbody tr
+{
+    height: auto;
+}
+.section-data-tables .dataTables_wrapper table.dataTable.stripe tbody tr .odd,
+.section-data-tables .dataTables_wrapper table.dataTable.display tbody tr .odd
+{
+    background-color: #f4f5f7;
+}
+.section-data-tables .dataTables_wrapper table.dataTable.stripe tbody tr .odd > .sorting_1,
+.section-data-tables .dataTables_wrapper table.dataTable.display tbody tr .odd > .sorting_1
+{
+    background-color: transparent;
+}
+.section-data-tables .dataTables_wrapper table.dataTable.stripe tbody tr .odd.selected,
+.section-data-tables .dataTables_wrapper table.dataTable.display tbody tr .odd.selected
+{
+    background-color: #acbad4 !important;
+}
+.section-data-tables .dataTables_wrapper table.dataTable.stripe tbody tr .odd.selected th,
+.section-data-tables .dataTables_wrapper table.dataTable.display tbody tr .odd.selected th
+{
+    border-radius: 0;
+}
+
+.section-data-tables .dataTables_wrapper table.dataTable.display tbody tr.hover > .sorting_1,
+.section-data-tables .dataTables_wrapper table.dataTable.display tbody tr:hover > .sorting_1,
+.section-data-tables .dataTables_wrapper table.dataTable.order-column.hover tbody tr.hover > .sorting_1,
+.section-data-tables .dataTables_wrapper table.dataTable.order-column.hover tbody tr:hover > .sorting_1
+{
+    background-color: transparent;
+}
+
+.section-data-tables .dataTables_wrapper table [type='checkbox'] + span:not(.lever):before,
+.section-data-tables .dataTables_wrapper table [type='checkbox']:not(.filled-in) + span:not(.lever):after
+{
+    opacity: .5; 
+    border-radius: 4px !important;
+}
+
+.section-data-tables .dataTables_wrapper .dataTables_length#page-length-option_length,
+.section-data-tables .dataTables_wrapper .dataTables_filter#page-length-option_filter
+{
+    display: block;
+}
+.section-data-tables .dataTables_wrapper .dataTables_length#page-length-option_length label select,
+.section-data-tables .dataTables_wrapper .dataTables_filter#page-length-option_filter label select
+{
+    display: inline-block;
+
+    width: auto;
+    height: auto;
+}
+.section-data-tables .dataTables_wrapper .dataTables_length#page-length-option_length label input,
+.section-data-tables .dataTables_wrapper .dataTables_filter#page-length-option_filter label input
+{
+    width: auto; 
+    height: auto;
+}
+
+.section-data-tables .dataTables_wrapper .dataTables_length {
+    display: none;
+}
+.section-data-tables .dataTables_wrapper .dataTables_filter
+{
+    display: block;
+}
+
+.section-data-tables .dataTables_wrapper .dataTables_info
+{
+    margin-left: 18px;
+
+    color: #616161;
+}
+
+.section-data-tables .dataTables_wrapper .dataTables_paginate,
+.section-data-tables .dataTables_wrapper #page-length-option_paginate
+{
+    margin-right: .35rem; 
+    margin-bottom: .75rem;
+}
+.section-data-tables .dataTables_wrapper .dataTables_paginate .paginate_button,
+.section-data-tables .dataTables_wrapper #page-length-option_paginate .paginate_button
+{
+    margin-top: .25rem; 
+    padding: .25em .65em;
+}
+.section-data-tables .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.section-data-tables .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+.section-data-tables .dataTables_wrapper #page-length-option_paginate .paginate_button.current,
+.section-data-tables .dataTables_wrapper #page-length-option_paginate .paginate_button.current:hover
+{
+    color: #fff !important;
+    border: 1px solid #7C3BDA;
+    border-radius: 6px;
+    background: #7C3BDA;
+    -webkit-box-shadow: 0 0 8px 0 #7C3BDA;
+            box-shadow: 0 0 8px 0 #7C3BDA;
+}
+.section-data-tables .dataTables_wrapper .dataTables_paginate .paginate_button:hover,
+.section-data-tables .dataTables_wrapper #page-length-option_paginate .paginate_button:hover
+{
+    color: #fff !important;
+    border: 1px solid #7C3BDA;
+    border-radius: 6px;
+    background: #7C3BDA;
+    -webkit-box-shadow: 0 0 8px 0 #7C3BDA;
+            box-shadow: 0 0 8px 0 #7C3BDA;
+}
+
+/*----------------------------------------
+        END Data Tables
+------------------------------------------*/
+
+
+/*Pages action button*/
+.btnItem {
+    padding: 0 .75rem;
+}
+/*END*/
