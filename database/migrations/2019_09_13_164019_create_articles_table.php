@@ -16,7 +16,7 @@ class CreateArticlesTable extends Migration
         Schema::create('articles', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->datetime('publish_datetime');
+            $table->datetime('publish_datetime')->useCurrent();
             $table->string('imageurl');
             $table->text('content');
             $table->enum('status', ['Published', 'Draft']);
