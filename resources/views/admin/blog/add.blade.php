@@ -29,7 +29,7 @@
           	<div class="card-content">
 	            <div class="row">
 	              	<div class="col s12 m12 l12">
-	              		<form method="POST" action="{{ route('blog.store') }}" enctype="multipart/form-data">
+	              		<form method="POST" action="{{ route('blog.index') }}" enctype="multipart/form-data">
 		              		@csrf
 		              		<div class="row">
 			              		<div class="col s12 m12 l12">
@@ -40,21 +40,21 @@
 							    </div>
 			              	</div>
 			              	<div class="row">
-			              		<div class="input-field col s12 m12 l12">
+			              		<div class="input-field col s12 m6 l6">
 					              	<input type="text" name="name" id="name" class="validate" required>
 					            	<label for="name">Article Name</label>
 				              	</div>
-				              	<!-- <div class="input-field col s12 m6 l6">
+				              	<div class="input-field col s12 m6 l6">
 					                <select name="news_category" id="category">
 					                	<option value="" disabled selected>Choose Category</option>
 					                	
 					                </select>
 					                <label for="category">News Category</label>
-				              	</div> -->
+				              	</div>
 			              	</div>
 			              	<div class="row">
 			              		<div class="col s12 m12 l12">
-			              			<label>Article Content</label>
+			              			<label>News Content</label>
 			              		</div>
 			              		<div class="col s12 m12 l12">
 			              			<textarea id="kcontent" name="kcontent"></textarea>

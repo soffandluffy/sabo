@@ -50,13 +50,6 @@ Route::group(['middleware' => 'auth'], function(){
 
 			Route::get('/', 'Admin\BlogController@index')->name('blog.index');
 			Route::get('/add', 'Admin\BlogController@add')->name('blog.add');
-			Route::post('/store', 'Admin\BlogController@store')->name('blog.store');
-			Route::get('/pageview/{id}', 'Admin\BlogController@articleview')->name('articleview');
-			Route::post('/publish/{id}', 'Admin\BlogController@publish')->name('article.publish');
-			Route::post('/draft/{id}', 'Admin\BlogController@draft')->name('article.draft');
-			Route::post('/update/{id}', 'Admin\BlogController@update')->name('article.update');
-			Route::post('/delete/{id}', 'Admin\BlogController@delete')->name('article.delete');
-			Route::get('/edit/{id}', 'Admin\BlogController@edit')->name('article.edit');
 
 		});
 
