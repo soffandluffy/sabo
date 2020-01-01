@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- BEGIN: VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="{{ asset('vendors/vendors.min.css') }}">
-    <!-- <link rel="stylesheet" type="text/css" href="{{ asset('vendors/sweetalert/sweetalert2.min.css') }}"> -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendors/sweetalert/sweetalert2.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('vendors/data-tables/css/jquery.dataTables.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('vendors/data-tables/css/select.dataTables.min.css') }}">
@@ -30,7 +30,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/pages/data-tables.css') }}">
     <!-- END: Page Level CSS-->
     <!-- BEGIN: Custom CSS-->
-    <!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/custom/dropify.css') }}"> -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/custom/dropify.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/custom/custom.css') }}">
     <!-- END: Custom CSS-->
   </head>
@@ -68,7 +68,7 @@
     <!-- BEGIN PAGE VENDOR JS-->
     <!-- <script src="{{ asset('vendors/chartjs/chart.min.js') }}"></script> -->
     <!-- <script src="{{ asset('vendors/fullcalendar/lib/jquery-ui.min.js') }}" type="text/javascript"></script> -->
-    <!-- <script src="{{ asset('vendors/sweetalert/sweetalert2.all.min.js') }}"></script> -->
+    <script src="{{ asset('vendors/sweetalert/sweetalert2.all.min.js') }}"></script>
     <!-- <script src="{{ asset('vendors/fullcalendar/lib/moment.min.js') }}" type="text/javascript"></script> -->
     <!-- <script src="{{ asset('vendors/fullcalendar/js/fullcalendar.min.js') }}" type="text/javascript"></script> -->
     <script src="{{ asset('vendors/data-tables/js/jquery.dataTables.min.js') }}" type="text/javascript"></script>
@@ -77,9 +77,9 @@
     <!-- END PAGE VENDOR JS-->
     <!-- BEGIN THEME  JS-->
     <script src="{{ asset('js/plugins.js') }}" type="text/javascript"></script>
-    <!-- <script src="{{ asset('js/custom/tinymce/tinymce.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/custom/tinymce/tinymce.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('js/custom/dropify.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/custom/wow.min.js') }}" type="text/javascript"></script> -->
+    <script src="{{ asset('js/custom/wow.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('js/custom/custom-script.js') }}" type="text/javascript"></script>
     <!-- END THEME  JS-->
     <!-- BEGIN PAGE LEVEL JS-->
