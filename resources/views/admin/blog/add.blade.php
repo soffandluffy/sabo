@@ -49,12 +49,12 @@
 					                	<option value="" disabled selected>Choose Category</option>
 					                	
 					                </select>
-					                <label for="category">News Category</label>
+					                <label for="category">Article Category</label>
 				              	</div>
 			              	</div>
 			              	<div class="row">
 			              		<div class="col s12 m12 l12">
-			              			<label>News Content</label>
+			              			<label>Article Content</label>
 			              		</div>
 			              		<div class="col s12 m12 l12">
 			              			<textarea id="kcontent" name="kcontent"></textarea>
