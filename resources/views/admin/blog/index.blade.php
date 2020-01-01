@@ -48,32 +48,32 @@
                     <tbody>
                       @foreach($articlelist as $article)
                         <tr>
-                          <td><img class="materialboxed" src="../../images/article/{{$article->imageurl}}" width="128" height="72"></td>
+                          <td><img class="materialboxed" src="../../images/" width="128" height="72"></td>
                           <td class="tdOverflow">{{ $article->name }}</td>
                           <!-- <td>{category->name }}</td> -->
                           <td>{{ $article->status }}</td>
                           <td>
-                            <a href="{{ route('articleview', $article->id) }}" class="btn btnItem waves-effect waves-dark tooltipped" data-position="bottom" data-tooltip="Preview"><i class="material-icons">pageview</i></a>
+                            <a href="{ route('', $article->id) }}" class="btn btnItem waves-effect waves-dark tooltipped" data-position="bottom" data-tooltip="Preview"><i class="material-icons">pageview</i></a>
                             @if ($article->status == "Draft")
-                              <form action="{{ route('article.publish', $article->id) }}" method="POST" style="display: inline-block;">
+                              <form action="{ route('.publish', id) }}" method="POST" style="display: inline-block;">
                                 @csrf
                                 <button type="submit" class="btn btnItem waves-effect waves-dark tooltipped" data-position="bottom" data-tooltip="Publish"><i class="material-icons">publish</i></button>
                               </form>
                             @else
-                              <form action="{{ route('article.draft', $article->id) }}" method="POST" style="display: inline-block;">
+                              <form action="{ route('.draft', id) }}" method="POST" style="display: inline-block;">
                                 @csrf
                                 <button type="submit" class="btn btnItem waves-effect waves-dark tooltipped" data-position="bottom" data-tooltip="Draft"><i class="material-icons">drafts</i></button>
                               </form>
                             @endif
-                            <a href="{{ route('article.edit', $article->id) }}" class="btn yellow darken-2 btnItem waves-effect waves-dark tooltipped" data-position="bottom" data-tooltip="Edit"><i class="material-icons">edit</i></a>
-                            <a href="#delete{{$article->id}}" class="btn red lighten-1 btnItem waves-effect waves-dark modal-trigger tooltipped" data-position="bottom" data-tooltip="Delete"><i class="material-icons">delete</i></a>
+                            <a href="{ route('.edit', id) }}" class="btn yellow darken-2 btnItem waves-effect waves-dark tooltipped" data-position="bottom" data-tooltip="Edit"><i class="material-icons">edit</i></a>
+                            <a href="#delete{->id}}" class="btn red lighten-1 btnItem waves-effect waves-dark modal-trigger tooltipped" data-position="bottom" data-tooltip="Delete"><i class="material-icons">delete</i></a>
 <!-- START Modal Delete Confirmation -->
-<div class="modal border-radius-6" id="delete{{$article->id}}">
+<div class="modal border-radius-6" id="delete{->id}}">
     <div class="modal-content pb-1 pt-2">
       <h5>Are you sure you want to delete this ?</h5>
     </div>
     <div class="modal-footer p-0 deletefooter">
-      <form id="deleteItem" method="POST" action="{{ route('article.delete', $article->id)}}" class="right mr-1">
+      <form id="deleteItem" method="POST" action="{route('.delete', id)}" class="right mr-1">
         @csrf
         <button type="submit" class="btn green lighten-1 waves-effect waves-light btn-delete-confirm">Delete</button>
       </form>
@@ -110,16 +110,16 @@
         
         @if (session()->has('success'))
             Swal.fire({
-              	title : 'Success',
-              	text : '{{session()->get("success")}}',
-              	type : 'success'
+              title : 'Success',
+              text : '{{session()->get("success")}}',
+              type : 'success'
             });
         @elseif ($errors->any())
-          	Swal.fire({
-	            title : 'Oops..',
-	            type : 'error',
-	            text : '{{ $errors->first() }}'
-          	});
+          Swal.fire({
+            title : 'Oops..',
+            type : 'error',
+            text : '{{ $errors->first() }}'
+          });
         @endif
 
       });
